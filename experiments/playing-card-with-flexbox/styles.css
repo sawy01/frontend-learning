@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 40px;
+  background-color: #F8F5F0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 16px;
+  border: 2px solid #efbf04;
+  padding: 10px;
+  width: 18.65rem;
+  height: 31.35rem;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.middle:not(.column) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-size: 13.5rem;
+}
+
+.middle:is(.column) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 50px;
+  padding: 4px 20px;
+  font-size: 5.5rem;
+  line-height: 2.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  transform: rotate(180deg);
+}
+
+.red {
+  color: red;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px black;
+}
